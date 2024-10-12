@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculadora.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Entry
+                x:Name="num1"
+                Placeholder= "Ingrese el primer digito"
+                Keyboard="Numeric"
+               />
+            <Entry
+                x:Name="num2"
+                Placeholder= "Ingrese el segundo digito"
+                Keyboard="Numeric"
+                />
+            <Button 
+                Text="Suma"
+                Clicked="btnSuma_Clicked"
+                HorizontalOptions="Fill"
+                />
+            <Button 
+                Text="Resta"
+                Clicked="btnResta_Clicked"
+                HorizontalOptions="Fill"
+                />
+            <Button 
+                Text="Multiplicación"
+                Clicked="btnMult_Clicked"
+                HorizontalOptions="Fill"
+                />
+            <Button 
+                Text="División"
+                Clicked="btnDiv_Clicked"
+                HorizontalOptions="Fill"
+                />
+            <Label 
+                x:Name="lblErr"
+                TextColor="Red"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
